@@ -76,6 +76,8 @@ a {
 .conteudo{
     width: 90%;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo {
@@ -103,4 +105,43 @@ footer{
     background-color: darkslateblue;
     margin-top: 100px;
     color: white;
+}
+
+/* ONDE ESTAMOS */
+
+iframe {
+    margin: auto;
+}
+
+/* COMISSOES */
+
+.comissao {
+    border-bottom: 1px solid darkslateblue;
+}
+
+.botaoComissao {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.botaoComissao:hover {
+    background-color: #e0ffff;
+    border-radius: 10px;
+}
+
+.botaoComissao img {
+    transform: scale(0.6);
+}
+
+.botaoComissao span {
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.descricaoComissao {
+    display: none;
+    color: #696969;
+    padding: 15px;
 }

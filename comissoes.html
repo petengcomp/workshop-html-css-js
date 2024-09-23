@@ -52,23 +52,102 @@
                     <h1>Comissões</h1>
                 </div>
 
-                <p>
-                    O Programa de Educação Tutorial (PET) de Engenharia de Computação da Universidade Federal do Espírito Santo (UFES) é uma iniciativa de excelência que visa promover o desenvolvimento acadêmico, pessoal e profissional dos alunos de Engenharia de Computação. Fundado com o objetivo de complementar a formação dos estudantes, o PET oferece um ambiente de aprendizado dinâmico, onde a teoria e a prática se encontram em projetos que envolvem pesquisa, ensino e extensão.
-                </p>
-                    Composto por um grupo seleto de alunos dedicados, orientados por um professor tutor, o PET Engenharia de Computação UFES busca incentivar o pensamento crítico, a inovação tecnológica e o trabalho em equipe. Através de projetos interdisciplinares, os integrantes têm a oportunidade de desenvolver soluções que impactam a sociedade, fortalecendo suas habilidades técnicas e socioemocionais.
-                <p>
-                    Além dos projetos, o PET organiza e participa de diversas atividades, como workshops, palestras, eventos acadêmicos e competições, contribuindo para o enriquecimento da comunidade acadêmica e ampliando as perspectivas de seus membros. A cultura de colaboração e a busca contínua por excelência fazem do PET um espaço privilegiado para a formação de engenheiros de computação capacitados, conscientes e preparados para enfrentar os desafios do mercado de trabalho e do mundo.
-                </p>
+                <div class="listaComissoes">
 
-                <p>
-                    O PET Engenharia de Computação UFES é mais do que um grupo de estudos; é um espaço de transformação, onde o aprendizado se alinha com a prática, e onde cada integrante é incentivado a alcançar seu máximo potencial, contribuindo para o avanço da engenharia e da tecnologia no Brasil e no mundo.
-                </p>
+                    <div class="comissao">
+
+                        <div class="botaoComissao" onclick="mudaEstadoDescricao('dev', 'setaComissao1')">
+                            <img id="setaComissao1" src="assets/seta-direita.png" alt="">
+                            <span>DEV</span>
+                        </div>
+
+                        <div class="descricaoComissao" id="dev">
+                            A comissão de Dev é responsável por desenvolver e dar manutenção a todos os sistemas web no domínio do PET Engenharia de Computação - UFES. Tais como, o site da Jacee, do Topcom, do Introcomp, do PET Engenharia de Computação entre outros. Alguns desses projetos podem ser achados nos links abaixo. Além disso, os integrantes da comissão trabalham também com o desenvolvimento de aplicações para dispositivos móveis. As ideias de aplicativos surgem conforme a demanda das outras comissões do grupo PET. Os integrantes da comissão visam o aprendizado de tecnologias compatíveis com o mercado atual, como React Native e Flutter.
+                        </div>
+                    </div>
+
+                    <div class="comissao">
+
+                        <div class="botaoComissao" onclick="mudaEstadoDescricao('eletropet', 'setaComissao2')">
+                            <img src="assets/seta-direita.png" alt="" id="setaComissao2">
+                            <span>EletroPET</span>
+                        </div>
+
+                        <div class="descricaoComissao" id="eletropet">
+                            A comissão EletroPET é responsável por desenvolver projetos que envolvam eletrônica, programação e microcontroladores, como Arduino e Micro:bit. A comissão tem o intuito de colocar em prática o que foi aprendido na teoria. Alguns projetos já foram desenvolvidos e estão visíveis ao público, tais como a tranca biométrica da sala do PET. Os projetos desenvolvidos estão todos documentados no instructables.
+                        </div>
+
+                    </div>
+                    <div class="comissao">
+
+                        <div class="botaoComissao" onclick="mudaEstadoDescricao('topcom', 'setaComissao3')">
+                            <img src="assets/seta-direita.png" alt="" id="setaComissao3">
+                            <span>Topcom</span>
+                        </div>
+
+                        <div class="descricaoComissao" id="topcom">
+                            O Topcom, Torneio de Programação de Computadores, é um evento anual organizado pelo PET EngComp por e alunos voluntários. O evento possui como principal motivação o incentivo à programação competitiva para os alunos da graduação e para os interessados de outras instituições de ensino, tanto do Médio quanto do Superior. O formato utilizado é baseado nos torneios nacionais e internacionais de programação competitiva. Procura-se simular ao máximo o ambiente oferecido por este torneio, utilizando questões, software e padrões de correção, para que os participantes possam experimentar um cenário real de competição e assim estarem familiarizados com as categorias de acesso à maratona nacional. As equipes ganhadoras do Torneio são premiadas com troféus e a inscrição na etapa regional da Maratona SBC de Programação.
+                        </div>
+
+                    </div>
+                    <div class="comissao">
+
+                        <div class="botaoComissao" onclick="mudaEstadoDescricao('gameJam', 'setaComissao4')">
+                            <img src="assets/seta-direita.png" alt="" id="setaComissao4">
+                            <span>Game Jam</span>
+                        </div>
+
+                        <div class="descricaoComissao" id="gameJam">
+                            O PET Game Jam é uma competição de desenvolvimento de jogos de navegador criada pelo PET Engenharia de Computação da Ufes. Os participantes devem se organizar em equipes de até quatro pessoas e programar um jogo de navegador seguindo uma temática fornecida no início da competição. As equipes têm uma semana para desenvolverem o jogo e após isso, eles serão avaliados e um vencedor é escolhido.
+                        </div>
+
+                    </div>
+                    <div class="comissao">
+
+                        <div class="botaoComissao" onclick="mudaEstadoDescricao('monitorias', 'setaComissao5')">
+                            <img src="assets/seta-direita.png" alt="" id="setaComissao5">
+                            <span>Monitorias</span>
+                        </div>
+
+                        <div class="descricaoComissao" id="monitorias">
+                            Alguns Petianos com mais facilidade em determinadas matérias fornecem monitorias para os alunos em algumas disciplinas, que atualmente são Estrutura de Dados 1, Programação 1 e Programação 2.
+                        </div>
+
+                    </div>
+                    <div class="comissao">
+
+                        <div class="botaoComissao" onclick="mudaEstadoDescricao('manutencao', 'setaComissao6')">
+                            <img src="assets/seta-direita.png" alt="" id="setaComissao6">
+                            <span>Manutenção</span>
+                        </div>
+
+                        <div class="descricaoComissao" id="manutencao">
+                            A comissão de manutenção é responsável pela infraestrutura computacional do PET Eng Comp, como o gerenciamento da rede interna e a manutenção das máquinas.Além de dar suporte às outras comissões em suas aplicações. Assim, os petianos envolvidos nessa comissão trabalham com os mais variados assuntos dentro de DevOps.
+                        </div>
+
+                    </div>
+                    <div class="comissao">
+
+                        <div class="botaoComissao" onclick="mudaEstadoDescricao('pulga', 'setaComissao7')">
+                            <img src="assets/seta-direita.png" alt="" id="setaComissao7">
+                            <span>Pulga</span>
+                        </div>
+
+                        <div class="descricaoComissao" id="pulga">
+                            PET divulga, cria todas as artes necessárias para as demais comissões do PET Eng Comp. Publicações em redes sociais, desenho de camisas e imagens para eventos são feitos por essa comissão. Portanto todos dentro do Pulga aprendem a trabalhar com importantes ferramentas de design gráfico.
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
 
         <footer>
             Todos os direitos reservados.
         </footer>
+
+        <script src="comissoes.js"></script>
     </body>
 
 </html>
