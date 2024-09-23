@@ -89,3 +89,63 @@ selector {
 - **Cascata e herança**: O CSS segue uma hierarquia, onde estilos aplicados a elementos mais externos podem ser herdados pelos internos. Além disso, quando há regras conflitantes, o CSS usa a **especificidade** para resolver essas situações:
   - **Especificidade**: Seletores mais específicos, como IDs, têm prioridade sobre seletores de classes ou tags.
   - **Ordem**: Se duas regras têm a mesma especificidade, a última regra definida no código será aplicada.
+
+<br>
+<br>
+<br>
+<br>
+
+# Resumo sobre JavaScript e Manipulação do DOM
+
+## JavaScript
+
+**JavaScript** é uma linguagem de programação amplamente utilizada para desenvolvimento web. Ela permite que desenvolvedores criem páginas interativas, respondendo a eventos como cliques de botão, envio de formulários e muito mais. JavaScript pode ser executado diretamente no navegador, tornando-o ideal para adicionar dinamismo às páginas web.
+
+## Manipulação do DOM
+
+O **DOM (Document Object Model)** é uma representação estruturada do conteúdo de um documento HTML ou XML como uma árvore de nós. Cada elemento da página (tags, atributos, textos, etc.) é representado como um objeto que pode ser acessado e manipulado usando JavaScript.
+
+### Seleção de Elementos
+
+Para manipular elementos, primeiro precisamos selecioná-los. As funções mais comuns para isso são:
+
+- `document.getElementById(id)`: Seleciona um elemento pelo seu `id`.
+  ```javascript
+  const elemento = document.getElementById("meuId");
+  ```
+- `document.getElementsByClassName(className)`: Seleciona todos os elementos com uma determinada classe (retorna uma coleção).
+  ```javascript
+  const elementos = document.getElementsByClassName("minhaClasse");
+  ```
+- `document.getElementsByTagName(tagName)`: Seleciona todos os elementos com um determinado nome de tag.
+  ```javascript
+  const paragrafos = document.getElementsByTagName("p");
+  ```
+- `document.querySelector(selector)`: Seleciona o primeiro elemento que corresponde a um seletor CSS.
+  ```javascript
+  const elemento = document.querySelector(".minhaClasse");
+  ```
+- `document.querySelectorAll(selector)`: Seleciona todos os elementos que correspondem a um seletor CSS.
+  ```javascript
+  const elementos = document.querySelectorAll("div > p");
+  ```
+
+### Modificação de Conteúdo
+
+Depois de selecionar um elemento, você pode alterar seu conteúdo e estilo:
+
+- **Modificar texto ou HTML interno**:
+  ```javascript
+  elemento.textContent = "Novo texto"; // Modifica o texto
+  elemento.innerHTML = "<strong>Novo conteúdo</strong>"; // Modifica o HTML
+  ```
+- **Modificar atributos**:
+  ```javascript
+  elemento.setAttribute("src", "imagem.jpg"); // Modifica o atributo 'src'
+  elemento.removeAttribute("alt"); // Remove o atributo 'alt'
+  ```
+- **Modificar estilo**:
+  ```javascript
+  elemento.style.color = "blue"; // Modifica a cor do texto
+  elemento.style.display = "none"; // Oculta o elemento
+  ```
