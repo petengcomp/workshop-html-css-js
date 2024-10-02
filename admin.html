@@ -52,23 +52,40 @@
                     <h1>Admin</h1>
                 </div>
 
-                <p>
-                    O Programa de Educação Tutorial (PET) de Engenharia de Computação da Universidade Federal do Espírito Santo (UFES) é uma iniciativa de excelência que visa promover o desenvolvimento acadêmico, pessoal e profissional dos alunos de Engenharia de Computação. Fundado com o objetivo de complementar a formação dos estudantes, o PET oferece um ambiente de aprendizado dinâmico, onde a teoria e a prática se encontram em projetos que envolvem pesquisa, ensino e extensão.
-                </p>
-                    Composto por um grupo seleto de alunos dedicados, orientados por um professor tutor, o PET Engenharia de Computação UFES busca incentivar o pensamento crítico, a inovação tecnológica e o trabalho em equipe. Através de projetos interdisciplinares, os integrantes têm a oportunidade de desenvolver soluções que impactam a sociedade, fortalecendo suas habilidades técnicas e socioemocionais.
-                <p>
-                    Além dos projetos, o PET organiza e participa de diversas atividades, como workshops, palestras, eventos acadêmicos e competições, contribuindo para o enriquecimento da comunidade acadêmica e ampliando as perspectivas de seus membros. A cultura de colaboração e a busca contínua por excelência fazem do PET um espaço privilegiado para a formação de engenheiros de computação capacitados, conscientes e preparados para enfrentar os desafios do mercado de trabalho e do mundo.
-                </p>
+               <div class="form">
 
-                <p>
-                    O PET Engenharia de Computação UFES é mais do que um grupo de estudos; é um espaço de transformação, onde o aprendizado se alinha com a prática, e onde cada integrante é incentivado a alcançar seu máximo potencial, contribuindo para o avanço da engenharia e da tecnologia no Brasil e no mundo.
-                </p>
+                    <div class="areaInput">
+                        <span>Nome:</span>
+                        <input type="text" placeholder="Nome" id="nome" onchange="setNome()">
+                    </div>
+
+                    <div class="areaInput">
+                        <span>Data de nascimento:</span>
+                        <input type="date" placeholder="" id="data" onchange="setData()">
+                    </div>
+
+                    <div class="areaInput">
+                        <span>Email:</span>
+                        <input type="email" placeholder="Email" id="email" onchange="setEmail()">
+                    </div>
+
+                    <button onclick="salvar()">
+                        Salvar
+                    </button>
+
+               </div>
+
+               <div class="listaPetianos">
+                    <h3>Lista de Petianos:</h3>
+               </div>
             </div>
         </div>
 
         <footer>
             Todos os direitos reservados.
         </footer>
+
+        <script src="admin.js"></script>
     </body>
 
 </html>
